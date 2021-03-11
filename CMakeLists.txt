@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(openai VERSION 1.0 DESCRIPTION "C wrapper for the OpenAI API")
+project(openai VERSION 1.0 DESCRIPTION "C wrapper for the OpenAI API" LANGUAGES C)
 
 set(CMAKE_C_STANDARD 99)
 
