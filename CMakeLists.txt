@@ -20,7 +20,7 @@ enable_testing()
 add_subdirectory(test)
 add_test(NAME main COMMAND tests)
 
-# Pandoc
-include(cmake/Modules/PandocMan.cmake)
+# Pandoc generate man pages
+include(.github/.cmake/Modules/PandocMan.cmake)
 set (CMAKE_INSTALL_FULL_MANDIR "/usr/local/man/")
 add_pandoc_man("${CMAKE_CURRENT_SOURCE_DIR}/doc/${PROJECT_NAME}.1.md")
